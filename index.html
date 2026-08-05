@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shubham — CSE Student & Cybersecurity Enthusiast</title>
+  <meta name="description" content="Shubham — B.Tech Computer Science Engineering student at SRMU, aspiring Cybersecurity Engineer and web developer. Explore projects, skills, and journey." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- AOS (scroll animations) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <div id="loader">
+    <div class="loader-terminal">
+      <span class="loader-prompt">&gt; booting_portfolio.exe</span>
+      <span class="loader-cursor">_</span>
+    </div>
+  </div>
+
+  <!-- ===================== CURSOR GLOW ===================== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Shubham<span class="logo-dot">.</span></a>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="assets/resume.pdf" class="btn btn-outline nav-resume" download>Resume</a>
+        <button class="menu-trigger" id="menuTrigger" aria-label="Open menu" aria-expanded="false">
+          <span class="menu-trigger-icon"><span></span><span></span><span></span></span>
+          <span class="menu-trigger-label">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu-panel" id="menuPanel">
+    <nav class="menu-links" id="navLinks">
+      <a href="#home" class="nav-link active-link"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a>
+      <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+      <a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+      <a href="#certificates" class="nav-link"><i class="fa-solid fa-certificate"></i> Certificates</a>
+      <a href="#references" class="nav-link"><i class="fa-solid fa-photo-film"></i> References</a>
+      <a href="#journey" class="nav-link"><i class="fa-solid fa-road"></i> Journey</a>
+      <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </nav>
+  </div>
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="aurora-blob blob-1"></div>
+    <div class="aurora-blob blob-2"></div>
+    <div class="aurora-blob blob-3"></div>
+    <div id="particles-js"></div>
+
+    <div class="hero-container">
+      <div class="hero-text" data-aos="fade-right">
+        <p class="hero-eyebrow"><span class="dot-blink"></span> root@shubham:~$ whoami</p>
+        <h1 class="hero-heading">Hi, I'm <span class="gradient-text">Shubham</span></h1>
+        <h2 class="hero-typed">
+          <span id="typed-text"></span><span class="typed-cursor">|</span>
+        </h2>
+        <p class="hero-subtitle">
+          Passionate about cybersecurity, secure software development, and building modern
+          digital experiences while continuously learning new technologies.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Explore Projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="assets/resume.pdf" class="btn btn-outline" download>Download Resume <i class="fa-solid fa-download"></i></a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:shubham@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap" data-aos="fade-left">
+        <div class="hero-ring"></div>
+        <div class="hero-image">
+          <img src="assets/profile.png" alt="Shubham" />
+        </div>
+        <div class="floating-chip chip-1"><i class="fa-solid fa-shield-halved"></i> Cybersecurity</div>
+        <div class="floating-chip chip-2"><i class="fa-solid fa-code"></i> Web Dev</div>
+        <div class="floating-chip chip-3"><i class="fa-solid fa-bug"></i> Bug Hunting</div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-tag">01 / About</p>
+      <h2 class="section-title">Who I Am</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text" data-aos="fade-right">
+        <p>
+          I'm a second-year Computer Science Engineering student at
+          <strong>Shree Ram Swaroop Memorial University, Lucknow</strong>, building a foundation
+          across programming, systems, and secure software design.
+        </p>
+        <p>
+          My long-term goal is to become a <strong>Cybersecurity Engineer</strong> — someone who
+          understands how systems break so they can build ones that don't. Alongside that, I enjoy
+          crafting clean, modern web experiences and contributing to open source.
+        </p>
+        <p>
+          I learn best by building: writing C programs to internalize how memory and data
+          structures actually behave, then translating that same problem-solving instinct into
+          JavaScript, security tooling, and real projects.
+        </p>
+      </div>
+
+      <div class="about-cards" data-aos="fade-left">
+        <div class="info-card">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div>
+            <span class="info-label">Education</span>
+            <span class="info-value">B.Tech CSE, SRMU — 2nd Year</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <span class="info-label">Location</span>
+            <span class="info-value">Lucknow, Uttar Pradesh, India</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-crosshairs"></i>
+          <div>
+            <span class="info-label">Focus Areas</span>
+            <span class="info-value">Web Dev · Cybersecurity · AI</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div>
+            <span class="info-label">Career Goal</span>
+            <span class="info-value">Cybersecurity Engineer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section section-alt" id="skills">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-tag">02 / Skills</p>
+      <h2 class="section-title">What I Work With</h2>
+    </div>
+
+    <div class="skills-columns">
+      <div class="skills-col" data-aos="fade-up">
+        <h3 class="skills-col-title"><i class="fa-solid fa-code"></i> Programming</h3>
+        <div class="skill-bar"><span class="skill-name">C</span><div class="bar-track"><div class="bar-fill" data-level="80"></div></div></div>
+        <div class="skill-bar"><span class="skill-name">Python</span><div class="bar-track"><div class="bar-fill" data-level="65"></div></div></div>
+        <div class="skill-bar"><span class="skill-name">HTML</span><div class="bar-track"><div class="bar-fill" data-level="90"></div></div></div>
+        <div class="skill-bar"><span class="skill-name">CSS</span><div class="bar-track"><div class="bar-fill" data-level="85"></div></div></div>
+        <div class="skill-bar"><span class="skill-name">JavaScript</span><div class="bar-track"><div class="bar-fill" data-level="70"></div></div></div>
+      </div>
+
+      <div class="skills-col" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="skills-col-title"><i class="fa-solid fa-seedling"></i> Currently Learning</h3>
+        <div class="skill-bar"><span class="skill-name">React</span><div class="bar-track"><div class="bar-fill" data-level="45"></div></div></div>
+        <div class="skill-bar"><span class="skill-name">Git &amp; GitHub</span><div class="bar-track"><div class="bar-fill" data-level="60"></div></div></div>
+        <div class="skill-bar"><span class="skill-name">Linux</span><div class="bar-track"><div class="bar-fill" data-level="50"></div></div></div>
+        <div class="skill-bar"><span class="skill-name">Networking</span><div class="bar-track"><div class="bar-fill" data-level="40"></div></div></div>
+        <div class="skill-bar"><span class="skill-name">Cybersecurity</span><div class="bar-track"><div class="bar-fill" data-level="55"></div></div></div>
+        <div class="skill-bar"><span class="skill-name">Bug Hunting</span><div class="bar-track"><div class="bar-fill" data-level="35"></div></div></div>
+      </div>
+
+      <div class="skills-col tools-col" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="skills-col-title"><i class="fa-solid fa-toolbox"></i> Tools</h3>
+        <div class="tool-grid">
+          <div class="tool-chip"><i class="fa-solid fa-code"></i> VS Code</div>
+          <div class="tool-chip"><i class="fa-brands fa-github"></i> GitHub</div>
+          <div class="tool-chip"><i class="fa-solid fa-palette"></i> Canva</div>
+          <div class="tool-chip"><i class="fa-brands fa-figma"></i> Figma</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section" id="projects">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-tag">03 / Projects</p>
+      <h2 class="section-title">Things I've Built</h2>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="project-card" data-aos="fade-up">
+        <div class="project-image proj-1"><i class="fa-solid fa-diagram-project"></i></div>
+        <div class="project-body">
+          <h3>Portfolio Website</h3>
+          <p>A personal portfolio with a code-editor inspired aesthetic, built and deployed on GitHub Pages.</p>
+          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="project-links">
+            <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="proj-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-image proj-2"><i class="fa-solid fa-database"></i></div>
+        <div class="project-body">
+          <h3>Student Management System</h3>
+          <p>A command-line C application to add, search, sort, and manage student records using file handling.</p>
+          <div class="tech-tags"><span>C</span><span>File I/O</span></div>
+          <div class="project-links">
+            <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="proj-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-image proj-3"><i class="fa-solid fa-cloud-sun"></i></div>
+        <div class="project-body">
+          <h3>Weather App</h3>
+          <p>Real-time weather lookup using a public API, with clean UI states for loading and errors.</p>
+          <div class="tech-tags"><span>JavaScript</span><span>API</span><span>CSS</span></div>
+          <div class="project-links">
+            <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="proj-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-aos="fade-up">
+        <div class="project-image proj-4"><i class="fa-solid fa-key"></i></div>
+        <div class="project-body">
+          <h3>Password Generator</h3>
+          <p>A configurable secure password generator with strength indicator — an early step into security tooling.</p>
+          <div class="tech-tags"><span>JavaScript</span><span>Security</span></div>
+          <div class="project-links">
+            <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="proj-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-image proj-5"><i class="fa-solid fa-calculator"></i></div>
+        <div class="project-body">
+          <h3>Calculator</h3>
+          <p>A responsive calculator with keyboard support and a clean, minimal interface.</p>
+          <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="project-links">
+            <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="proj-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card project-soon" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-image proj-6"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="project-body">
+          <span class="soon-badge">Coming Soon</span>
+          <h3>Cybersecurity Dashboard</h3>
+          <p>A dashboard to monitor and visualize common vulnerability patterns — currently in planning.</p>
+          <div class="tech-tags"><span>Python</span><span>Security</span><span>Data Viz</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATES ===================== -->
+  <section class="section section-alt" id="certificates">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-tag">04 / Certificates</p>
+      <h2 class="section-title">Learning Milestones</h2>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert-card" data-aos="zoom-in">
+        <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+        <h4>Python</h4>
+        <p>Foundations & problem solving</p>
+      </div>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="cert-icon"><i class="fa-brands fa-html5"></i></div>
+        <h4>HTML &amp; CSS</h4>
+        <p>Modern web fundamentals</p>
+      </div>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="cert-icon"><i class="fa-brands fa-js"></i></div>
+        <h4>JavaScript</h4>
+        <p>Interactive web programming</p>
+      </div>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="cert-icon"><i class="fa-brands fa-git-alt"></i></div>
+        <h4>Git &amp; GitHub</h4>
+        <p>Version control workflows</p>
+      </div>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="400">
+        <div class="cert-icon"><i class="fa-solid fa-user-shield"></i></div>
+        <h4>Cybersecurity</h4>
+        <p>Fundamentals & best practices</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REFERENCES ===================== -->
+  <section class="section section-alt" id="references">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-tag">05 / References</p>
+      <h2 class="section-title">Inspiration &amp; References</h2>
+      <p class="section-subtitle">Photos and videos I'm using as reference while shaping ideas and future projects.</p>
+    </div>
+
+    <div class="ref-grid">
+      <a href="#" target="_blank" rel="noopener" class="ref-card" data-aos="fade-up">
+        <div class="ref-thumb ref-1"><i class="fa-solid fa-image"></i></div>
+        <div class="ref-body">
+          <span class="ref-type"><i class="fa-solid fa-image"></i> Photo</span>
+          <h4>Dashboard UI Reference</h4>
+          <p>Layout and color inspiration for the Cybersecurity Dashboard project.</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square ref-arrow"></i>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=rE9TIi_-h5U" target="_blank" rel="noopener" class="ref-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="ref-thumb ref-2"><i class="fa-solid fa-video"></i></div>
+        <div class="ref-body">
+          <span class="ref-type"><i class="fa-solid fa-video"></i> Video</span>
+          <h4>Ethical Hacking Walkthrough</h4>
+          <p>A demo I'm studying to understand real-world vulnerability scanning workflows.</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square ref-arrow"></i>
+      </a>
+
+      <a href="#" target="_blank" rel="noopener" class="ref-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="ref-thumb ref-3"><i class="fa-solid fa-image"></i></div>
+        <div class="ref-body">
+          <span class="ref-type"><i class="fa-solid fa-image"></i> Photo</span>
+          <h4>Portfolio Design Moodboard</h4>
+          <p>Visual direction and color palette references for future site redesigns.</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square ref-arrow"></i>
+      </a>
+
+      <a href="https://www.youtube.com/playlist?list=PLIFyRwBY_4bRLmKfP1KnZA6rZbRHtxmXi" target="_blank" rel="noopener" class="ref-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="ref-thumb ref-4"><i class="fa-solid fa-video"></i></div>
+        <div class="ref-body">
+          <span class="ref-type"><i class="fa-solid fa-video"></i> Video</span>
+          <h4>Networking Fundamentals Series</h4>
+          <p>Reference series I'm following while learning networking basics.</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square ref-arrow"></i>
+      </a>
+    </div>
+
+    <p class="ref-note">
+      <i class="fa-solid fa-circle-info"></i>
+      Replace the <code>href="#"</code> links above with your actual photo/video URLs (Google Drive, YouTube, Pinterest, Behance, etc.) in <code>index.html</code>.
+    </p>
+  </section>
+
+  <!-- ===================== JOURNEY / TIMELINE ===================== -->
+  <section class="section" id="journey">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-tag">06 / Journey</p>
+      <h2 class="section-title">My Path So Far</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-tag">School</span>
+          <p>Built curiosity for how computers work — first introduction to logic and problem-solving.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-tag">B.Tech Journey Begins</span>
+          <p>Started B.Tech in Computer Science Engineering at SRMU, Lucknow.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-tag">Learning Programming</span>
+          <p>Deep-dived into C — arrays, pointers, file handling, and sorting algorithms — and picked up HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-tag">Learning Cybersecurity</span>
+          <p>Currently exploring networking fundamentals, Linux, and the basics of ethical hacking and bug hunting.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-tag">Future Internship</span>
+          <p>Seeking hands-on internship experience in web development or security to apply what I've learned.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-dot timeline-dot-goal"></div>
+        <div class="timeline-content">
+          <span class="timeline-tag">Career Goal</span>
+          <p>Becoming a Cybersecurity Engineer — protecting the systems I once only wondered about.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ACHIEVEMENTS ===================== -->
+  <section class="achievements">
+    <div class="achieve-grid">
+      <div class="achieve-item" data-aos="fade-up">
+        <span class="achieve-number" data-target="6">0</span>
+        <span class="achieve-label">Projects Built</span>
+      </div>
+      <div class="achieve-item" data-aos="fade-up" data-aos-delay="100">
+        <span class="achieve-number" data-target="10">0</span>
+        <span class="achieve-label">Technologies Learned</span>
+      </div>
+      <div class="achieve-item" data-aos="fade-up" data-aos-delay="200">
+        <span class="achieve-number" data-target="300">0</span>
+        <span class="achieve-label">Hours of Coding</span>
+      </div>
+      <div class="achieve-item" data-aos="fade-up" data-aos-delay="300">
+        <span class="achieve-number" data-target="25">0</span>
+        <span class="achieve-label">GitHub Contributions</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section" id="contact">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-tag">07 / Contact</p>
+      <h2 class="section-title">Let's Connect</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-form-wrap" data-aos="fade-right">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xljrrqaj" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about it..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+
+      <div class="contact-side" data-aos="fade-left">
+        <div class="contact-info-card">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <span class="info-label">Email</span>
+            <span class="info-value">shubham@example.com</span>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <span class="info-label">Location</span>
+            <span class="info-value">Lucknow, Uttar Pradesh, India</span>
+          </div>
+        </div>
+        <div class="contact-map">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <span>Map preview</span>
+        </div>
+        <div class="contact-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <p>Made with <i class="fa-solid fa-heart"></i> by Shubham</p>
+    <p class="footer-copy">© 2026 Shubham. All rights reserved.</p>
+  </footer>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
